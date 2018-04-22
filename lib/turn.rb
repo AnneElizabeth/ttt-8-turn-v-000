@@ -49,6 +49,5 @@ def turn(board)
       valid_move?
       turn(board)
       counter += 1
-    end
   end
 end
