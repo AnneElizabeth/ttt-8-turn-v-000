@@ -40,7 +40,7 @@ def turn(board)
   index = input_to_index(user_input)
   
   if valid_move?(board, index)
-   move(board, index, value = "X")
+    move(board, index, value = "X")
   else
     loop do
       counter = 0
