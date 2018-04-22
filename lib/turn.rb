@@ -43,11 +43,6 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, value = "X")
   else
-    loop do
-      counter = 0
-      until valid_move?(board, index)
         turn(board)
-      counter += 1
-    end
   end
 end
