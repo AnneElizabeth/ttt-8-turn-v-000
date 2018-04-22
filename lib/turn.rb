@@ -26,13 +26,11 @@ def move(board, index, value)
 end
 
 def valid_move?(board, index)
-  index = input_to_index(user_input)
   index.between?(0,9) && board[index] == " "
 end     
   
 
 def position_taken?(board, index)
-   index = input_to_index(user_input)
    !(board[index] == " " || board[index] == "" || board[index] == nil)
 end
 
