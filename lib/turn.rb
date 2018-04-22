@@ -44,10 +44,9 @@ def turn(board)
   else
     loop do
       counter = 0
-      
+      turn(board)
       until
       valid_move?
-      turn(board)
       counter += 1
     end
   end
