@@ -47,7 +47,10 @@ def turn(board)
       
       until
       valid_move?
+      turn(board)
       counter += 1
+    end
+  end
 end
 
 
