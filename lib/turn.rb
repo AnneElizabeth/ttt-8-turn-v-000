@@ -39,14 +39,14 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
   
-  if valid_move?
-   move
+  if valid_move?(board, index)
+   move(board, index, value = "X")
   else
     loop do
       counter = 0
       turn(board)
       until
-      valid_move?
+      valid_move?(board, index)
       counter += 1
     end
   end
