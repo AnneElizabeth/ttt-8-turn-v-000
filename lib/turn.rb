@@ -49,3 +49,4 @@ end
         turn(board)
       counter += 1
     end
+  end
