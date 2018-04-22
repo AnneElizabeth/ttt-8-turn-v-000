@@ -20,7 +20,7 @@ end
 
 def move(board, index, value)
  
- index = input_to_index(user_input)
+ 
  
  board[index] = value
 end
