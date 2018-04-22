@@ -26,6 +26,7 @@ def move(board, index, value)
 end
 
 def valid_move?(board, index)
+  index = input_to_index(user_input)
   index.between?(0,9) && board[index] == " "
 end     
   
@@ -42,7 +43,7 @@ def turn(board)
   if 
     move(board, index, value = "X")
   else
-    turn
+    turn(board)
   end
 end
 
